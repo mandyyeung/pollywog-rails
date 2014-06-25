@@ -1,0 +1,21 @@
+<h1>Frogs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @frogs.each do |frog| %>
+      <tr>
+        <td><%= link_to frog.name, frog %></td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Frog', new_frog_path %>

@@ -1,0 +1,21 @@
+<h1>Ponds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ponds.each do |pond| %>
+      <tr>
+        <td><%= link_to pond.name , pond %></td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Create a new pond', new_pond_path %>
